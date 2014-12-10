@@ -1,0 +1,613 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>boutwik</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/slick.js/slick/slick.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <!-- NAVIGATION -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".menu">
+        <span class="sr-only">navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="logo" href="">
+        <img class="img-responsive" src="images/logo.svg" alt="" width="200" height="25" />
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse menu">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="index.html">Feed</a>
+        </li>
+        <li>
+          <a href="decouverte.html">Découverte</a>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">Plus <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="about-conso.html">A propos - Consommateurs</a>
+            </li>
+            <li><a href="about-brand.html">A propos - Marques</a>
+            </li>
+            <li><a href="about-leader.html">A propos - Leaders d'opinion</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <form action="#" id="search">
+            <input type="text" name="search" placeholder="Recherche ...">
+          </form>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="glyphicon glyphicon-plus"></span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="create-boutwik.html">Crée une Boutwik</a>
+            </li>
+            <li><a href="pourquoi-boutwik.html">Pourquoi une Boutwik ?</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="glyphicon glyphicon-user"></span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="profil.html">Profil</a>
+            </li>
+            <li><a href="parametre-user.html">Paramètres</a>
+            </li>
+            <li><a href="remise.html">Remises</a>
+            </li>
+            <li class="divide"></li>
+            <li><a href="mes-boutwiks.html">Mes Boutwiks</a>
+            </li>
+            <li><a href="index.html">Déconnexion</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="panier.html"><span class="glyphicon glyphicon-shopping-cart"></span><span class="badge">3</span></a>
+        </li>
+      </ul>
+  </nav>
+  <!-- END NAVIGATION -->
+  <section id="boutwik-user">
+    <section class="brand-banner" style="background: url(http://lorempixel.com/g/1920/450/);">
+      <!-- BRAND-HEADER -->
+      <div class="brand-header">
+        <div class="container">
+          <header class="col-md-12">
+            <h3>MAMAMA</h3>
+            <small>lorem ipsum</small>
+          </header>
+          <ul class="brand-follow">
+            <li><a href="#" class="button small">Suivre +</a>
+            </li>
+            <li><span class="button small">1300 abonnés</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="brand-nav">
+        <ul>
+          <li class="actif"><a href="boutwik-about.html">A propos</a>
+          </li>
+          <li><a href="boutwik.html">Journal</a>
+          </li>
+          <li><a href="boutwik-shop.html">Shop</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="brand-nav-alt">
+        <ul>
+          <li>
+            <a href=""><img src="http://s3.amazonaws.com/boutwik1/shops/images/000/000/110/thumb/524411_477558522269144_123347341_n-1.jpg?1403774091" alt="" />
+            </a>
+          </li>
+          <li class="actif"><a href="boutwik-about.html">A propos</a>
+          </li>
+          <li><a href="boutwik.html">Journal</a>
+          </li>
+          <li><a href="boutwik-shop.html">Shop</a>
+          </li>
+          <li><a href="" class="button pull-right">suivre +</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- BOUTWIK BRAND -->
+
+    <section id="brand-container">
+
+      <!-- ABOUT BRAND -->
+      <section class="top50">
+        <div class="container-fluid">
+          <div class="col-md-6">
+            <img class="img-responsive center-block" src="http://lorempixel.com/output/technics-q-c-640-300-7.jpg" alt="" />
+          </div>
+          <div class="col-md-6">
+            <h1>Découvrez Dandy Blog</h1>
+            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUIT PHARES -->
+      <section class="bg-grey top30">
+        <div class="container-fluid">
+          <h1>Produits Phares</h1>
+          <hr>
+          <ul class="thumbnails" id="brand-shop">
+            <li class="col-sm-4">
+              <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+                <div class="thumbnail">
+                  <div class="caption">
+                    <h4>Dagobear</h4>
+                    <hr>
+                    <p>Noeud Papillon tricot bleu et rouge</p>
+                    <h3>29.00€</h3>
+                    <hr>
+                    <p>
+                      <div class="dropdown dropup col-md-6">
+                        <a class="button small dropdown-toggle" data-toggle="dropdown" href="#">
+                          Ajouter <span class="glyphicon glyphicon-plus"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Ajouter à mes favoris</a></li>
+                          <li class="divider"></li>
+                          <li class="dropdown-header">Ajouter à une Boutwiks</li>
+                          <li><a href="#">MAMAMA</a></li>
+                          <li><a href="#">Dandy Blog</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="panier.html" class="button small" rel="tooltip" title="Achetez">
+                          <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <img class="img-responsive" src="http://s3.amazonaws.com/boutwik1/product_images/images/000/001/899/polaroid/sac-besace-homme-noir-et-orange-miky-27714_76958.jpg?1416367131" alt="ALT NAME">
+                  </div>
+                </a>
+
+                <!-- MODAL -->
+                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                      </button>
+                      <h4 class="modal-title"><img src="http://s3.amazonaws.com/boutwik1/shops/images/000/000/175/thumb/Logo-MA.png?1413446161" alt="" />ULTRA TEE</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                      <div class="col-md-8">
+                        <!-- CAROUSSEL -->
+                        <div id="myCarousel" class="carousel slide">
+                          <!-- Dot Indicators -->
+                          <ol class="carousel-indicators col-md-12">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                          </ol>
+                          <!-- Items -->
+                          <div class="carousel-inner">
+                            <div class="active item"><img src="http://lorempixel.com/output/city-q-c-640-480-7.jpg" alt="" />
+                            </div>
+                            <div class="item"><img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" alt="" />
+                            </div>
+                            <div class="item"><img src="http://lorempixel.com/output/transport-q-c-640-480-4.jpg" alt="" />
+                            </div>
+                          </div>
+                          <!--/carousel-inner-->
+                          <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                          <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+
+
+                        <h1>Description</h1>
+                        <hr>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+
+                      </div>
+                      <!-- CAROUSSEL -->
+                      <div class="col-md-4">
+                        <!-- sidebar-->
+                        <h3>Sweat-shirt coton an thracite col rond Permanent Vacation</h3>
+
+                        <div class="input-modal-product">
+                          <!-- INPUT MODAL PRODUCT -->
+                          <input class="form-control" type="number" name="some_name" value="1">
+                          <select class="form-control">
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                          </select>
+                          <h1>69,00€</h1>
+                          <small>+ 3.65 € de frais de port par unité</small>
+                          <a href="#" class="button">Ajouter au panier <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                          <a href="#" class="button">Acheter directement <span class="glyphicon glyphicon-shopping-cart"></span></a>
+
+                        </div>
+                        <!-- END INPUT MODAL PRODUCT-->
+
+                      </div>
+                      <!-- MODAL-BODY -->
+                    </div>
+                    <!-- MODAL-DIALOG -->
+                  </div>
+                  <!-- END MODAL -->
+                </li>
+                <li class="col-sm-4">
+                  <div class="thumbnail">
+                    <div class="caption">
+                      <h4>Dagobear</h4>
+                      <hr>
+                      <p>Noeud Papillon tricot bleu et rouge</p>
+                      <h3>29.00€</h3>
+                      <hr>
+                      <p>
+                        <a href="#" class="button small" rel="tooltip" title="Suivre le Boutwikeur">
+                          <span class="glyphicon glyphicon-plus"></span>
+                        </a>
+                        <a href="#" class="button small" rel="tooltip" title="Achetez">
+                          <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </a>
+                      </p>
+                    </div>
+                    <img class="img-responsive" src="http://s3.amazonaws.com/boutwik1/product_images/images/000/001/662/polaroid/trousse-de-toilette-homme-en-toile-montecarlo-eco-responsable-21357_65832.jpg?1416345442" alt="ALT NAME">
+                  </div>
+                </li>
+                <li class="col-sm-4">
+                  <div class="thumbnail">
+                    <div class="caption">
+                      <h4>Dagobear</h4>
+                      <hr>
+                      <p>Noeud Papillon tricot bleu et rouge</p>
+                      <h3>29.00€</h3>
+                      <hr>
+                      <p>
+                        <a href="#" class="button small" rel="tooltip" title="Suivre le Boutwikeur">
+                          <span class="glyphicon glyphicon-plus"></span>
+                        </a>
+                        <a href="#" class="button small" rel="tooltip" title="Achetez">
+                          <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </a>
+                      </p>
+                    </div>
+                    <img class="img-responsive" src="http://s3.amazonaws.com/boutwik1/product_images/images/000/001/661/polaroid/sac-a-chaussures-gris-roby-fangio-21356_59626.jpg?1416345436" alt="ALT NAME">
+                  </div>
+                </li>
+
+              </ul>
+          <a href="boutwik-shop.html" class="button">Plus d'articles</a>
+          </div>
+      </section>
+
+      <section class="top30">
+        <!-- Produits liés -->
+        <div class="container-fluid">
+          <h1>Publication Phare</h1>
+          <hr class="hr-alt">
+          <div class="col-md-6">
+            <h1>Produits Liés</h1>
+            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-md-6">
+            <img class="img-responsive" src="http://lorempixel.com/output/nature-q-c-640-480-6.jpg" alt="" />
+            <h2>Produit associé</h2>
+            <ul id="best-deal" class="top30">
+              <li class="col-md-4">
+                <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+                  <div class="result-boutwik-content">
+                    <img class="img-responsive" src="http://s3.amazonaws.com/boutwik1/shops/front_images/000/000/146/thumb_large/E2R-02.jpg?1413815284" alt="" />
+                    <div class="desc">
+                      <h3>MAMAMA</h3>
+                      <p>
+                        Sweat-shirt coton prune col rond Free
+                      </p>
+                      <h4>69€</h4>
+                    </div>
+                  </div>
+                </a>
+                <!-- MODAL -->
+                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                      </button>
+                      <h4 class="modal-title"><img src="http://s3.amazonaws.com/boutwik1/shops/images/000/000/175/thumb/Logo-MA.png?1413446161" alt="" />ULTRA TEE</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                      <div class="col-md-8">
+                        <!-- CAROUSSEL -->
+                        <div id="myCarousel" class="carousel slide">
+                          <!-- Dot Indicators -->
+                          <ol class="carousel-indicators col-md-12">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                          </ol>
+                          <!-- Items -->
+                          <div class="carousel-inner">
+                            <div class="active item"><img src="http://lorempixel.com/output/city-q-c-640-480-7.jpg" alt="" />
+                            </div>
+                            <div class="item"><img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" alt="" />
+                            </div>
+                            <div class="item"><img src="http://lorempixel.com/output/transport-q-c-640-480-4.jpg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <h1>Description</h1>
+                        <hr>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                      <!-- CAROUSSEL -->
+                      <div class="col-md-4">
+                        <!-- sidebar-->
+                        <h3>Sweat-shirt coton an thracite col rond Permanent Vacation</h3>
+
+                        <div class="input-modal-product">
+                          <!-- INPUT MODAL PRODUCT -->
+                          <input class="form-control" type="number" name="some_name" value="1">
+                          <select class="form-control">
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                          </select>
+                          <h1>69,00€</h1>
+                          <small>+ 3.65 € de frais de port par unité</small>
+                          <a href="#" class="button">Achetez <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                        </div>
+                        <!-- END INPUT MODAL PRODUCT-->
+
+                      </div>
+                      <!-- MODAL-BODY -->
+                    </div>
+                    <!-- MODAL-DIALOG -->
+                  </div>
+                  <!-- END MODAL -->
+              </li>
+              <li class="col-md-4">
+                <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+                  <div class="result-boutwik-content">
+                    <img class="img-responsive" src="http://s3.amazonaws.com/boutwik1/shops/front_images/000/000/146/thumb_large/E2R-02.jpg?1413815284" alt="" />
+                    <div class="desc">
+                      <h3>MAMAMA</h3>
+                      <p>
+                        Sweat-shirt coton prune col rond Free
+                      </p>
+                      <h4>69€</h4>
+                    </div>
+                  </div>
+                </a>
+                <!-- MODAL -->
+                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                      </button>
+                      <h4 class="modal-title"><img src="http://s3.amazonaws.com/boutwik1/shops/images/000/000/175/thumb/Logo-MA.png?1413446161" alt="" />ULTRA TEE</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                      <div class="col-md-8">
+                        <!-- CAROUSSEL -->
+                        <div id="myCarousel" class="carousel slide">
+                          <!-- Dot Indicators -->
+                          <ol class="carousel-indicators col-md-12">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                          </ol>
+                          <!-- Items -->
+                          <div class="carousel-inner">
+                            <div class="active item"><img src="http://lorempixel.com/output/city-q-c-640-480-7.jpg" alt="" />
+                            </div>
+                            <div class="item"><img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" alt="" />
+                            </div>
+                            <div class="item"><img src="http://lorempixel.com/output/transport-q-c-640-480-4.jpg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <h1>Description</h1>
+                        <hr>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                      <!-- CAROUSSEL -->
+                      <div class="col-md-4">
+                        <!-- sidebar-->
+                        <h3>Sweat-shirt coton an thracite col rond Permanent Vacation</h3>
+
+                        <div class="input-modal-product">
+                          <!-- INPUT MODAL PRODUCT -->
+                          <input class="form-control" type="number" name="some_name" value="1">
+                          <select class="form-control">
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                          </select>
+                          <h1>69,00€</h1>
+                          <small>+ 3.65 € de frais de port par unité</small>
+                          <a href="#" class="button">Achetez <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                        </div>
+                        <!-- END INPUT MODAL PRODUCT-->
+
+                      </div>
+                      <!-- MODAL-BODY -->
+                    </div>
+                    <!-- MODAL-DIALOG -->
+                  </div>
+                  <!-- END MODAL -->
+              </li>
+              <li class="col-md-4">
+                <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+                  <div class="result-boutwik-content">
+                    <img class="img-responsive" src="http://s3.amazonaws.com/boutwik1/shops/front_images/000/000/146/thumb_large/E2R-02.jpg?1413815284" alt="" />
+                    <div class="desc">
+                      <h3>MAMAMA</h3>
+                      <p>
+                        Sweat-shirt coton prune col rond Free
+                      </p>
+                      <h4>69€</h4>
+                    </div>
+                  </div>
+                </a>
+                <!-- MODAL -->
+                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                      </button>
+                      <h4 class="modal-title"><img src="http://s3.amazonaws.com/boutwik1/shops/images/000/000/175/thumb/Logo-MA.png?1413446161" alt="" />ULTRA TEE</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                      <div class="col-md-8">
+                        <!-- CAROUSSEL -->
+                        <div id="myCarousel" class="carousel slide">
+                          <!-- Dot Indicators -->
+                          <ol class="carousel-indicators col-md-12">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                          </ol>
+                          <!-- Items -->
+                          <div class="carousel-inner">
+                            <div class="active item"><img src="http://lorempixel.com/output/city-q-c-640-480-7.jpg" alt="" />
+                            </div>
+                            <div class="item"><img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" alt="" />
+                            </div>
+                            <div class="item"><img src="http://lorempixel.com/output/transport-q-c-640-480-4.jpg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <h1>Description</h1>
+                        <hr>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                      <!-- CAROUSSEL -->
+                      <div class="col-md-4">
+                        <!-- sidebar-->
+                        <h3>Sweat-shirt coton an thracite col rond Permanent Vacation</h3>
+
+                        <div class="input-modal-product">
+                          <!-- INPUT MODAL PRODUCT -->
+                          <input class="form-control" type="number" name="some_name" value="1">
+                          <select class="form-control">
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                          </select>
+                          <h1>69,00€</h1>
+                          <small>+ 3.65 € de frais de port par unité</small>
+                          <a href="" class="button">Achetez <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                        </div>
+                        <!-- END INPUT MODAL PRODUCT-->
+
+                      </div>
+                      <!-- MODAL-BODY -->
+                    </div>
+                    <!-- MODAL-DIALOG -->
+                  </div>
+                  <!-- END MODAL -->
+              </li>
+            </ul>
+            </div>
+            <a href="boutwik.html" class="button">Voir +</a>
+            </div>
+      </section>
+
+    </section>
+    <!-- END BOUTWIK BRAND -->
+  </section>
+  <!-- END BOUTWIK-USER -->
+
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="bower_components/slick.js/slick/slick.min.js"></script>
+  <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
+  <script src="bower_components/infinite-scroll/jquery.infinitescroll.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- build:js({app,.tmp}) scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

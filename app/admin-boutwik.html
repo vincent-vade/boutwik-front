@@ -1,0 +1,391 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>boutwik</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/slick.js/slick/slick.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <!-- NAVIGATION -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".menu">
+        <span class="sr-only">navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="logo" href="">
+        <img class="img-responsive" src="images/logo.svg" alt="" width="200" height="25" />
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse menu">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="index.html">Feed</a>
+        </li>
+        <li>
+          <a href="decouverte.html">Découverte</a>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">Plus <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="about-conso.html">A propos - Consommateurs</a>
+            </li>
+            <li><a href="about-brand.html">A propos - Marques</a>
+            </li>
+            <li><a href="about-leader.html">A propos - Leaders d'opinion</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <form action="#" id="search">
+            <input type="text" name="search" placeholder="Recherche ...">
+          </form>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="glyphicon glyphicon-plus"></span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a data-toggle="modal" data-target="#create" href="">Crée une Boutwik</a>
+            </li>
+            <li><a href="pourquoi-boutwik.html">Pourquoi une Boutwik ?</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="glyphicon glyphicon-user"></span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="profil.html">Profil</a>
+            </li>
+            <li><a href="" data-toggle="modal" data-target="#myModal">Paramètres</a>
+            </li>
+            <li><a href="remise.html">Remises</a>
+            </li>
+            <li class="divide"></li>
+            <li><a href="mes-boutwiks.html">Mes Boutwiks</a>
+            </li>
+            <li><a href="index.html">Déconnexion</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="panier.html"><span class="glyphicon glyphicon-shopping-cart"></span><span class="badge">3</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- create boutwik -->
+    <div class="modal fade" id="create" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h1 class="modal-title" id="myModalLabel">Ma nouvelle Boutwik</h1>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nom de votre Boutwik">
+              </div>
+              <div class="col-sm-12">
+                <input type="checkbox" id="Checkbox"/>
+                <label for="Checkbox">
+                   Officielle
+                </label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae illum quam voluptates provident asperiores laudantium corrupti corporis rerum, eius distinctio, quas vel aliquid expedita beatae nobis in cupiditate. Molestias, nihil.</p>
+
+              </div>
+
+              <div class="col-sm-12 top17">
+                <input type="checkbox" id="Checkbox1"/>
+                <label for="Checkbox1">
+                 Concept store
+                </label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae illum quam voluptates provident asperiores laudantium corrupti corporis rerum, eius distinctio, quas vel aliquid expedita beatae nobis in cupiditate. Molestias, nihil.</p>
+
+              </div>
+
+            </form>
+
+
+          </div>
+          <div class="modal-footer top17">
+            <button type="button" class="button col-sm-12">Créer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- parameter -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h1 class="modal-title" id="myModalLabel">Profil</h1>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Prénom">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nom">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nom d'utilisateur">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="email">
+              </div>
+              <input type="checkbox" id="Checkbox"/>
+              <label for="Checkbox">
+                <span class="glyphicon glyphicon-envelope"></span> Recevoir la newsletter
+              </label>
+            </form>
+            <hr>
+            <h1>Modifier mot de passe</h1>
+            <hr>
+            <form action="" role="form">
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Mot de passe">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Vérification du mot de passe">
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button col-sm-12">Enregister les modifications</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END NAVIGATION -->
+    <section id="boutwik-user">
+      <section class="brand-banner" style="background: url(http://lorempixel.com/g/1920/450/);">
+        <div class="brand-header">
+          <header class="col-md-12">
+            <h3>MAMAMA</h3>
+            <small>lorem ipsum</small>
+          </header>
+          <ul class="brand-follow">
+            <li><a href="#" class="button small">Suivre +</a>
+            </li>
+            <li><span class="button small">1300 abonnés</span>
+            </li>
+          </ul>
+        </div>
+        <nav class="brand-nav">
+          <ul>
+            <li><a href="admin-boutwik.html">Paramètres</a></li>
+            <li class="actif"><a href="boutwik-about.html">A propos</a></li>
+            <li><a href="boutwik.html">Journal</a></li>
+            <li><a href="boutwik-shop.html">Shop</a></li>
+          </ul>
+        </nav>
+        <nav class="brand-nav-alt">
+          <ul>
+            <li>
+              <a href=""><img src="http://s3.amazonaws.com/boutwik1/shops/images/000/000/110/thumb/524411_477558522269144_123347341_n-1.jpg?1403774091" alt="" />
+              </a>
+            </li>
+            <li class="actif"><a href="boutwik-about.html">A propos</a>
+            </li>
+            <li><a href="boutwik.html">Journal</a>
+            </li>
+            <li><a href="boutwik-shop.html">Shop</a>
+            </li>
+            <li><a href="" class="button pull-right">suivre +</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <div id="brand-container" class="container-fluid">
+        <aside class="col-md-3" id="sidebar-admin">
+          <h4>Arrière-Boutwik de ta Bouibouik</h4>
+          <hr class="hr-alt">
+          <nav role="navigation">
+            <ul>
+              <li class="actif"><a href="admin-boutwik.html">Arrière-Boutwik</a></li>
+              <li><a href="admin-boutwik-about.html">A propos</a></li>
+              <li><a href="admin-boutwik-shop.html">Shop</a></li>
+              <li><a href="">Journal</a></li>
+              <li><a href="">Autres</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <!-- DASHBOARD -->
+        <section class="col-md-9" id="content-admin">
+          <!-- STATISTIC -->
+          <div class="container-fluid">
+            <div class="col-md-3 top17 info-admin">
+              <small>CA: </small><h2> 2000€</h2>
+            </div>
+            <div class="col-md-3 top17 info-admin">
+              <small>Bénéfices: </small><h2>2000€</h2>
+            </div>
+            <div class="col-md-3 top17 info-admin">
+              <small>Visites: </small><h2>2000</h2>
+            </div>
+          </div>
+          <!-- END STATISTIC -->
+          <hr>
+
+          <!-- BADGE -->
+          <div class="container-fluid top30 bg-alt pad20">
+            <h1>BADGES</h1>
+            <hr class="hr-alt">
+            <div class="bs-example top30">
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#sectionA">Bouibouiker</a></li>
+                <li><a data-toggle="tab" href="#sectionB">Novice</a></li>
+                <li><a data-toggle="tab" href="#sectionC">Confirme</a></li>
+                <li><a data-toggle="tab" href="#sectionD">Expert</a></li>
+                <li><a data-toggle="tab" href="#sectionE">Superstar</a></li>
+              </ul>
+              <div class="tab-content">
+                <div id="sectionA" class="tab-pane fade in active container-fluid">
+                  <h3>Bouibouiker</h3>
+                  <hr class="hr-alt">
+                  <h1 class="top30 text-center">Bientôt Disponible</h1>
+                </div>
+                <div id="sectionB" class="tab-pane fade">
+                  <h3>Novice</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem odio, aspernatur eligendi. Beatae cupiditate tenetur eius nostrum minus harum, culpa labore commodi obcaecati enim similique saepe facere ducimus animi repudiandae?</p>
+                </div>
+                <div id="sectionC" class="tab-pane fade">
+                  <h3>Confirme</h3>
+                  <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+                </div>
+                <div id="sectionD" class="tab-pane fade">
+                  <h3>Expert</h3>
+                  <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+                </div>
+                <div id="sectionE" class="tab-pane fade">
+                  <h3>Superstar</h3>
+                  <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END BAGE -->
+          <hr>
+
+          <!-- STATISTIC -->
+          <div class="container-fluid top30 bg-alt pad20">
+            <h1>STATISTIC</h1>
+            <hr class="hr-alt">
+            <!-- END VISIT -->
+            <div class="bs-example top30">
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#A">Chiffres d'affaires</a></li>
+                <li><a data-toggle="tab" href="#B">Bénéfices</a></li>
+                <li><a data-toggle="tab" href="#C">Visites</a></li>
+              </ul>
+              <div class="tab-content">
+                <div id="A" class="tab-pane fade in active container-fluid">
+                  <div id="ca" style="height: 300px"></div>
+                </div>
+                <div id="B" class="tab-pane fade containe-fluid">
+                  <div id="benef" style="height: 300px"></div>
+                </div>
+                <div id="C" class="tab-pane fade containe-fluid">
+                  <div id="visit" style="height: 300px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END STATISTIC -->
+
+          <hr>
+
+          <!-- COMMAND -->
+          <div class="container-fluid top30 bg-alt pad20">
+            <h1>Récapitulatif commandes</h1>
+            <hr>
+            <div id="command" style="height: 300px"></div>
+          </div>
+          <!-- END COMMANDE -->
+        </section>
+        <!-- END DASHBOARD -->
+      </div>
+
+
+          <!-- build:js(.) scripts/vendor.js -->
+          <!-- bower:js -->
+          <script src="bower_components/jquery/dist/jquery.js"></script>
+          <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+          <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+          <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+          <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+          <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+          <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+          <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+          <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+          <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+          <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+          <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+          <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+          <script src="bower_components/slick.js/slick/slick.min.js"></script>
+          <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
+          <script src="bower_components/infinite-scroll/jquery.infinitescroll.js"></script>
+          <script src="bower_components/chartjs/Chart.min.js"></script>
+          <script src="bower_components/highcharts/highcharts.js"></script>
+          <script src="bower_components/highcharts/highcharts-more.js"></script>
+          <script src="bower_components/highcharts/modules/exporting.js"></script>
+          <script src="scripts/easing.js"></script>
+          <script src="scripts/graph.js"></script>
+          <script src="scripts/sticky.js"></script>
+          <!-- endbower -->
+          <!-- endbuild -->
+
+          <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+          <script>
+            (function(b, o, i, l, e, r) {
+              b.GoogleAnalyticsObject = l;
+              b[l] || (b[l] =
+              function() {
+                (b[l].q = b[l].q || []).push(arguments)
+              });
+              b[l].l = +new Date;
+              e = o.createElement(i);
+              r = o.getElementsByTagName(i)[0];
+              e.src = '//www.google-analytics.com/analytics.js';
+              r.parentNode.insertBefore(e, r)
+            }(window, document, 'script', 'ga'));
+            ga('create', 'UA-XXXXX-X');
+            ga('send', 'pageview');
+          </script>
+
+          <!-- build:js({app,.tmp}) scripts/main.js -->
+          <script src="scripts/main.js"></script>
+          <!-- endbuild -->
+        </body>
+
+        </html>
